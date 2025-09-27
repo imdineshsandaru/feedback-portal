@@ -7,6 +7,7 @@ import {
   FileText, 
   Users,
   Brain,
+  Database,
   Menu,
   X
 } from 'lucide-react';
@@ -25,6 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Create Survey', href: '/admin/surveys/new', icon: PlusCircle },
     { name: 'Responses', href: '/admin/responses', icon: Users },
     { name: 'AI Assistant', href: '/admin/ai', icon: Brain },
+    { name: 'RAG Chat', href: '/admin/rag', icon: Database },
     { name: 'Settings', href: '/admin/settings', icon: Settings },
   ];
 

@@ -8,6 +8,7 @@ import SurveyBuilder from './components/SurveyBuilder';
 import SurveyForm from './components/SurveyForm';
 import ResponseList from './components/ResponseList';
 import AIAssistant from './components/AIAssistant';
+import RAGChat from './components/RAGChat';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="surveys/new" element={<SurveyBuilder />} />
                 <Route path="responses" element={<ResponseList />} />
                 <Route path="ai" element={<AIAssistant />} />
+                <Route path="rag" element={<RAGChat />} />
                 <Route path="settings" element={<div className="text-center py-12"><h2 className="text-2xl font-bold text-gray-900">Settings coming soon...</h2></div>} />
               </Routes>
             </Layout>
